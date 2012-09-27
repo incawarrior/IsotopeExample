@@ -1,0 +1,142 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-image: url("/img/background.png");   
+    background-repeat: repeat;    
+}
+
+.clear-divs {
+    clear:  both;
+}
+
+/* Navigation Bar overrides */
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navbar-inner {
+    background-image: url("/img/background-navigation.png");   
+    background-repeat: repeat-x;
+    height: 53px !important; 
+    border: none !important;
+}
+
+.nav {
+    margin-top:  4px !important;    
+}
+
+.nav a {
+    color:  white !important;    
+}
+
+.logo {
+    margin-top: 6px !important;
+}
+
+.logo img {
+    height:  44px !important;    
+}
+
+/* Sign In Settings */
+
+#registerSection, #forgotPasswordSection {
+    display: none;
+}
+
+.profile-link-header
+{
+    background-color: #EEE;
+    margin-bottom: 20px;
+}
+
+.profile-img-row
+{
+    margin-bottom: 5px;
+}
+
+.profile-main-img
+{
+    margin-top: -40px;
+}
+
+.modal-body
+{
+
+}
+
+.thumbnails img
+{
+    width:  100%;
+    border-radius: 15px !important; 
+    -moz-border-radius: 15px !important; 
+    -webkit-border-radius: 15px !important; 
+}
+
+.filter-row
+{
+    margin: 0 0 15px 95px;
+}
+
+.filter-item:hover 
+{
+    cursor: pointer;
+}
+
+.filter-row span
+{
+    margin: 0 15px 0 0;
+}
+
+#piccee-photos {
+    margin-top: 20px;    
+}
+
+.piccee-photo
+{
+    background-color:  white;
+    border-radius: 15px !important; 
+    -moz-border-radius: 15px !important; 
+    -webkit-border-radius: 15px !important;
+    -webkit-box-shadow: 3px 2px 7px rgba(51, 50, 50, 0.75);
+    -moz-box-shadow:    3px 2px 7px rgba(51, 50, 50, 0.75);
+    box-shadow:         3px 2px 7px rgba(51, 50, 50, 0.75); 
+}
+
+.piccee-photo-modal
+{
+    width: 60%;
+    margin: 0 0 0 10%;
+}
+
+.thumbnails {
+    margin-left: 15px !important;
+}
+
+.thumbnails > li {
+    margin-left: 5px !important;
+    margin-bottom: 5px;
+}
+
+#profile {
+    display: none;   
+    margin: 5px 5px 20px 5px;
+    border: 1px solid #38202f;
+    background-image: linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
+    background-image: -o-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
+    background-image: -moz-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
+    background-image: -webkit-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
+    background-image: -ms-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
+    background-image: -webkit-gradient(
+        linear,
+    	left bottom,
+    	left top,
+    	color-stop(0.01, rgb(237,223,231)),
+    	color-stop(0.76, rgb(156,141,150))
+    );
+}
+
+#profile-photos {
+    display: none;   
+}
