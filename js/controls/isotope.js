@@ -1,6 +1,8 @@
 $('#container').isotope({
   // options
   itemSelector : '.element',
-  layoutMode : 'fitRows'
+  masonry: {
+      columnWidth: 15
+  }
 });
 
