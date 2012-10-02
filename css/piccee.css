@@ -183,29 +183,33 @@ body {
     width: 170px;   
 }
 
-.size1x1{
+.size1x1 img{
     height: 170px; 
     width: 170px;      
 }
 
 .element.size1x2{
     height: 170px; 
-    width: 350px;    
+    width: 350px;
+    overflow: hidden;
 }
 
-.size1x2{
-    height: 170px; 
-    width: 350px;   
+.size1x2 img{
+    height: 230px; 
+    width: 350px;
+    margin: -20px 0;   
 }
 
 .element.size2x1{
     height: 350px; 
-    width: 170px;    
+    width: 170px;
+    overflow:  hidden;
 }
 
-.size2x1{
-    height: 350px; 
-    width: 170px;    
+.size2x1 img{
+    height: 350px;
+    width: 230px;
+    margin: 0 -20px
 }
 
 .element.size2x2{
@@ -213,7 +217,7 @@ body {
     width: 350px;    
 }
 
-.size2x2{
+.size2x2 img{
     height: 350px; 
     width: 350px;    
 }
@@ -315,14 +319,14 @@ body {
 .element.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
 .element.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
 /**/
-/*
+
 .element * {
   position: absolute;
   margin: 0;
 }
 
 
-
+/*
 
 
     

@@ -2,7 +2,7 @@ $('#container').isotope({
   // options
   itemSelector : '.element',
   masonry: {
-      columnWidth: 15
+      columnWidth: 20
   }
 });
 
