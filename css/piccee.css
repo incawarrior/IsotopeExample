@@ -4,7 +4,12 @@ html {
 
 body {
     background-image: url("/img/background.png");   
-    background-repeat: repeat;    
+    background-repeat: repeat;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .clear-divs {
@@ -39,110 +44,6 @@ body {
     height:  44px !important;    
 }
 
-/* Sign In Settings */
-
-#registerSection, #forgotPasswordSection {
-    display: none;
-}
-
-.profile-link-header
-{
-    background-color: #EEE;
-    margin-bottom: 20px;
-}
-
-.profile-img-row
-{
-    margin-bottom: 5px;
-}
-
-.profile-main-img
-{
-    margin-top: -40px;
-}
-
-.modal-body
-{
-
-}
-
-.thumbnails img
-{
-    width:  100%;
-    border-radius: 15px !important; 
-    -moz-border-radius: 15px !important; 
-    -webkit-border-radius: 15px !important; 
-}
-
-.filter-row
-{
-    margin: 0 0 15px 95px;
-}
-
-.filter-item:hover 
-{
-    cursor: pointer;
-}
-
-.filter-row span
-{
-    margin: 0 15px 0 0;
-}
-
-#piccee-photos {
-    margin-top: 20px;    
-}
-
-.piccee-photo
-{
-    background-color:  white;
-    border-radius: 15px !important; 
-    -moz-border-radius: 15px !important; 
-    -webkit-border-radius: 15px !important;
-    -webkit-box-shadow: 3px 2px 7px rgba(51, 50, 50, 0.75);
-    -moz-box-shadow:    3px 2px 7px rgba(51, 50, 50, 0.75);
-    box-shadow:         3px 2px 7px rgba(51, 50, 50, 0.75); 
-}
-
-.piccee-photo-modal
-{
-    width: 60%;
-    margin: 0 0 0 10%;
-}
-
-.thumbnails {
-    margin: 15px !important;
-}
-/*
-.thumbnails > li {
-    margin-left: 5px !important;
-    margin-bottom: 5px;
-}
-*/
-
-#profile {
-    display: none;   
-    margin: 5px 5px 20px 5px;
-    border: 1px solid #38202f;
-    background-image: linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
-    background-image: -o-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
-    background-image: -moz-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
-    background-image: -webkit-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
-    background-image: -ms-linear-gradient(bottom, rgb(237,223,231) 1%, rgb(156,141,150) 76%);
-    background-image: -webkit-gradient(
-        linear,
-    	left bottom,
-    	left top,
-    	color-stop(0.01, rgb(237,223,231)),
-    	color-stop(0.76, rgb(156,141,150))
-    );
-}
-
-#profile-photos {
-    display: none;   
-}
-
-
 #container {
   border: 1px solid #666;
   padding: 5px;
@@ -172,12 +73,95 @@ body {
   -webkit-border-top-right-radius: 1.2em;
       -moz-border-radius-topright: 1.2em;
           border-top-right-radius: 1.2em;
+    width: 60%;   
 }
 
 
 /*NEED TO CHANGE SIZES TO BE  1x1, 1x2, 2x1, or 2x2 in size BASED ON THE PIC OF THE GIRL.*/
 
+.photos .photo {
+  width: 220px;
+  margin: 5px;
+  float: left;
+}
 
+.photos .photo img {
+  display: block;
+  width: 100%;
+}
+
+.demos #content {
+  height: 100%;
+}
+
+
+
+
+
+.element.size1x1{
+    height: 170px;
+}
+
+.size1x1 img{
+    height: 170px;    
+}
+
+.element.size1x2{
+    height: 170px; 
+    width: 350px;
+    overflow: hidden;
+}
+
+.size1x2 img{
+    height: 230px; 
+    width: 350px;
+    margin: -20px 0;   
+}
+
+.element.size2x1{
+    height: 350px; 
+    width: 170px;
+    overflow:  hidden;
+}
+
+.size2x1 img{
+    height: 350px;
+    width: 230px;
+    margin: 0 -20px
+}
+
+.element.size2x2{
+    height: 350px; 
+    width: 350px;    
+}
+
+.size2x2 img{
+    height: 350px; 
+    width: 350px;    
+}
+
+.element.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element.other.nonmetal  { background: #00F; background: hsl( 252, 100%, 50%); }
+.element.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+/**/
+
+.element * {
+  position: absolute;
+  margin: 0;
+}
+
+
+
+
+/*
+    
 .element.size1x1{
     height: 170px; 
     width: 170px;   
@@ -222,195 +206,4 @@ body {
     width: 350px;    
 }
 
-
-
-
-/*
-.element.square1{
-    width: 100px;
-    height: 100px;
-}
-
-.square1{
-    width: 100px;
-    height: 100px;
-}
-
-.element.square2{
-    width: 200px;
-    height: 200px;
-}
-
-.square2{
-    width: 200px;
-    height: 200px;
-}
-
-.element.portrait1{
-    width: 130px;
-    height: 195px;        
-}
-
-.portrait1{
-    width: 130px;
-    height: 195px;
-}
-
-.element.portrait2{
-    width: 170px;
-    height: 195px;
-}
-
-.portrait2{
-    width: 170px;
-    height: 195px;     
-}
-
-.element.portrait3{
-    width: 240px;
-    height: 360px;
-}
-
-.portrait3{
-    width: 240px;
-    height: 360px;        
-}
-
-.element.landscape1{
-    width: 200px;
-    height: 120px;
-}
-
-.landscape1{
-    width: 200px;
-    height: 120px;      
-}
-
-.element.landscape2{
-    width: 220px;
-    height: 150px;
-}
-
-.landscape2{
-    width: 220px;
-    height: 150px;
-}
-
-.element.landscape3{
-    width: 200px;
-    height: 150px;
-}
-
-.landscape3{
-    width: 200px;
-    height: 150px;        
-}
 */
-
-
-.element.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-.element.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-.element.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-.element.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-.element.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-.element.other.nonmetal  { background: #00F; background: hsl( 252, 100%, 50%); }
-.element.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-.element.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
-/**/
-
-.element * {
-  position: absolute;
-  margin: 0;
-}
-
-
-/*
-
-
-    
-    
-.element.square1{
-    width: 100px;
-    height: 100px;
-}
-
-.square1{
-    width: 100px;
-    height: 100px;
-}
-
-.element.square2{
-    width: 192px;
-    height: 192px;
-}
-
-.square2{
-    width: 192px;
-    height: 192px;
-}
-
-.element.portrait1{
-    width: 128px;
-    height: 192px;        
-}
-
-.portrait1{
-    width: 128px;
-    height: 192px;        
-}
-
-.element.portrait2{
-    width: 168px;
-    height: 192px;        
-}
-
-.portrait2{
-    width: 168px;
-    height: 192px;        
-}
-
-.element.portrait3{
-    width: 237px;
-    height: 356px;    
-}
-
-.portrait3{
-    width: 237px;
-    height: 356px;        
-}
-
-.element.landscape1{
-    width: 192px;
-    height: 114px;        
-}
-
-.landscape1{
-    width: 192px;
-    height: 114px;        
-}
-
-.element.landscape2{
-    width: 192px;
-    height: 120px;        
-}
-
-.landscape2{
-    width: 192px;
-    height: 120px;        
-}
-
-.element.landscape3{
-    width: 192px;
-    height: 145px;        
-}
-
-.landscape3{
-    width: 192px;
-    height: 145px;        
-}
-
-    
-    
-    */
